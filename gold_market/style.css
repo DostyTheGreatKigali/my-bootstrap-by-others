@@ -32,6 +32,17 @@ main {
     font-weight: bolder !important;
   }
    */
+
+   .navbar-light .nav-item .nav-link {
+    background-color: #FFD101 !important;
+    color: #000!important;
+  }
+
+   .navbar-dark .nav-item .nav-link {
+    background-color: #000 !important;
+    color: #FFD101!important;
+  }
+
   .navbar-dark .nav-item.active .nav-link,
   .navbar-dark .nav-item .nav-link:active,
   .navbar-dark .nav-item .nav-link:focus,
@@ -47,16 +58,45 @@ main {
     width: 80px; height: 80px
 }
 
-i.fas, i.fab, i.far {
-      /* border: 1px solid red; */
+/* i.fas, i.fab, i.far {
       font-size: 2em; 
       color: #FFD101;
 }
 i.fas:hover, i.fab:hover, i.far:hover {
-      /* border: 1px solid red; */
       font-size: 2em !important; 
       color: #000 !important;
+} */
+
+/* i.fas, i.fab, i.far {
+    font-size: 2em;
+    color: #FFD101;
+} */
+
+/* i.fas:hover, i.fab:hover, i.far:hover {
+    font-size: 2em !important;
+    color: #000 !important;
+} */
+
+/* .fa-fish {
+  color: salmon;
 }
+
+.fa-frog {
+  color: green;
+}
+ */
+
+ /* i.fas.fa-chart-bar, i.fas.fa-calculator, i.fas.fa-donate {
+    font-size: 2em;
+      color: #FFD101;
+  }
+
+  i.fas.fa-chart-bar:hover, i.fas.fa-calculator:hover, i.fas.fa-donate:hover {
+  font-size: 2em;
+    color: #FFD101;
+} */
+
+
 
 footer {
     background-color: #FFD101 !important;
@@ -76,4 +116,50 @@ footer {
     padding: 1.5em;
     /* width: 200px; */
      height: 1.5em;
+}
+
+#purity_input, #karat_input,
+#price_per_pound_input,
+#total_price_input {
+    background-color : transparent;
+    border-color: #FFD101;
+}
+
+/* .btn .btn-block .btn-primary {
+    background-color: #000 !important;
+    color: #FFD101 !important;
+} */
+
+#generate_button {
+    background-color: #000 !important;
+    color: #FFD101 !important;
+    font-weight: bolder;
+    box-shadow: none !important;
+    border-radius: 2em;
+}
+/*
+a {
+    text-decoration: none;
+} */
+
+/* .btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+ } */
+
+ /* .btn {
+	box-shadow: none !important
+} */
+
+.a_text {
+    text-decoration: none !important;
+    color: #000;
+    font-weight: bolder;
+}
+
+.a_text:hover {
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #000000;
 }
