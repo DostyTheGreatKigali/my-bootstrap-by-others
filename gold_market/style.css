@@ -14,10 +14,15 @@ main {
     background: #FFD101;
 }
 
+
 .second-nav{
     top: 50px;
     background: #000000;
     border-bottom: 5px solid #FFD101;
+}
+
+.small-screen-first-nav {
+    display: none;
 }
 
   /* NAVBAR ACTIVE COLOR CHANGE
@@ -162,4 +167,40 @@ a {
     color: #fff;
     font-weight: bolder;
     background-color: #000000;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 575px) {
+    .first-nav{
+        display: none;
+    }
+
+    #large_screen_logo {
+        display: none;
+    }
+    
+    #top_bar_menu_icon {
+        display: none;
+    }
+
+    .small-screen-first-nav {
+        display: block;
+        background: #FFD101;
+
+    }
+}
+
+@media (min-width: 576px) {
+    .first-nav{
+        display: block;
+    }
+
+    #small_screen_logo {
+        display: none;
+    }
+    
+    #top_bar_menu_icon {
+        display: none;
+    }
 }
