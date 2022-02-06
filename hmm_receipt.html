@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hmmm</title>
+</head>
+<body>
+    <div 
+    style="display: flex; flex-direction: row; justify-content: center; 
+    align-content: center;
+    "
+    >
+        <div 
+        style="display: flex; flex-direction: column; justify-content: center; 
+        align-content: center;
+        border: 1px solid #ddd;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        "
+        >
+            <h2 style="text-align: center;">${companyName.toUpperCase()}</h2>
+            <div style="margin-bottom: 1rem;">
+                <p>${newTodaysDate}</p>
+                <p>Receipt No: ${receiptNoToPrint}</p>
+                <p>Client: ${nameToPrint}</p>
+                <p>Phone: ${phoneToPrint}</p>
+            </div>
+
+            <div>
+            <table style="border-collapse: collapse; width: 300px;">
+                <tr style="border-bottom: 4px dotted #ddd;">
+                        <td>Grams</td>
+                        <td>${Number(gramsToPrint).toFixed(2)}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Pounds</td>
+                <td>${poundsToPrint}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Volume</td>
+                <td>${Number(volumeToPrint).toFixed(2)}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Density</td>
+                <td>${densityToPrint}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Purity</td>
+                <td>${purityToPrint} %</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Karat</td>
+                <td>${karatToPrint}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Price</td>
+                <td>GH₵ ${Number(pricetToPrint).toFixed(2)}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td>Price per pound</td>
+                <td>GH₵ ${pricePerPoundToPrint}</td>
+                </tr>
+                <tr style="border-bottom: 4px dotted #ddd;">
+                <td><h3>Total Price</h3></td>
+                <td><h3>GH₵ ${totalPricetToPrint}</h3></td>
+                </tr>
+                
+            </table>
+            </div>
+
+
+            <div 
+            style=" 
+         
+            margin-top: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            "
+            >
+                <p style="font-weight: bold; text-align: center;">${thanksMessage}</p>
+                <p style="font-size: 12px; text-align: center;">${companyLocation}</p>
+                <p style="font-size: 12px; text-align: center;">${companyEmail}</p>
+                <p style="font-size: 12px; text-align: center;">${companyContact}</p>
+                <p style="font-weight: bold; text-align: center;">${softwareBuilders}</p>
+            </div>
+        
+            </div>        
+    </div>
+    
+</body>
+</html>
