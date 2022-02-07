@@ -16,7 +16,7 @@ main {
 
 
 .second-nav{
-    top: 50px;
+    /* top: 50px; */
     background: #000000;
     border-bottom: 5px solid #FFD101;
 }
