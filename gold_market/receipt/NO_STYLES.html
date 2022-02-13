@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="gold_market/receipt_styles.css"> -->
+
+    <title>Receipt</title>
+</head>
+<body>
+
+    <div>
+
+       <div>
+        <h4 style="">${companyName.toUpperCase()}</h4>
+        <div style="">
+            <p>${newTodaysDate}</p>
+            <p>Receipt No: ${receiptNoToPrint}</p>
+            <p>Client: ${nameToPrint}</p>
+            <p>Phone: ${phoneToPrint}</p>
+        </div>  
+       </div>
+
+       <div>
+        <table style="border-collapse: collapse; width: 300px;">
+            <tr style="border-bottom: 4px dotted #ddd;">
+                    <td>Grams</td>
+                    <td>${Number(gramsToPrint).toFixed(2)}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Pounds</td>
+            <td>${poundsToPrint}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Volume</td>
+            <td>${Number(volumeToPrint).toFixed(2)}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Density</td>
+            <td>${densityToPrint}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Purity</td>
+            <td>${purityToPrint} %</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Karat</td>
+            <td>${karatToPrint}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Price</td>
+            <td>GH₵ ${Number(pricetToPrint).toFixed(2)}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td>Price per pound</td>
+            <td>GH₵ ${pricePerPoundToPrint}</td>
+            </tr>
+            <tr style="border-bottom: 4px dotted #ddd;">
+            <td><h3>Total Price</h3></td>
+            <td><h3>GH₵ ${totalPricetToPrint}</h3></td>
+            </tr>
+            
+        </table>
+       </div>
+
+       <div>
+        <p style="font-weight: bold;">${thanksMessage}</p>
+        <p style="font-size: 12px;">${companyLocation}</p>
+        <p style="font-size: 12px;">${companyEmail}</p>
+        <p style="font-size: 12px;">${companyContact}</p>
+        <p style="font-weight: bold;">${softwareBuilders}</p>
+       </div>
+
+    </div>
+    
+ 
+         <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+</html>
