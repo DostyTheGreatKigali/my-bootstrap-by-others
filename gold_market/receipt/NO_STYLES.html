@@ -14,65 +14,58 @@
 
     <div 
     style="font-family: 'Open Sans', sans-serif;
-    padding-left: 16px;
-    padding-right: 16px;
-    /* padding-top: 16px; */
     padding-bottom: 8px;
-    font-size: 14px;
+    font-size: 16px;
     "
     >
 
        <div>
-        <h4 style="text-align: center;">${companyName.toUpperCase()}</h4>
+        <h3 style="text-align: center;">${companyName.toUpperCase()}</h3>
         <div style="">
-            <p style="margin-bottom: 0; margin-top: 0;">Date: ${newTodaysDate}</p>
-            <p style="margin-bottom: 0; margin-top: 0;">Receipt No: ${receiptNoToPrint}</p>
-            <p style="margin-bottom: 0; margin-top: 0;">Client: ${nameToPrint}</p>
+            <p style="margin-bottom: 2px; margin-top: 0;">Date: ${newTodaysDate}</p>
+            <p style="margin-bottom: 2px; margin-top: 0;">Receipt No: ${receiptNoToPrint}</p>
+            <p style="margin-bottom: 2px; margin-top: 0;">Client: ${nameToPrint}</p>
             <p style="margin-top: 0;">Phone: ${phoneToPrint}</p>
         </div>  
        </div>
 
        <div>
-        <table style="border-collapse: collapse; width: 400px;">
-            <tr style="border-bottom: 4px dotted #808080; 
-            /* display: flex; flex-direction: row;
-            justify-content: space-between; */
-            "
-            >
-                <td>Grams</td>
-                <td style="text-align: right;">${Number(gramsToPrint).toFixed(2)}</td>
+        <table style="border-collapse: collapse; width: 500px;">
+            <tr style="border-bottom: 2px dashed #000000;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Grams</td>
+                <td style="text-align: right; padding-bottom: 20px;">${Number(gramsToPrint).toFixed(2)}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Pounds</td>
-                <td style="text-align: right;">${poundsToPrint}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px; font-weight: bold;">Pounds</td>
+                <td style="text-align: right; padding-bottom: 20px; font-weight: bold;">${poundsToPrint}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Volume</td>
-                <td style="text-align: right;">${Number(volumeToPrint).toFixed(2)}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Volume</td>
+                <td style="text-align: right; padding-bottom: 20px;">${Number(volumeToPrint).toFixed(2)}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Density</td>
-                <td style="text-align: right;">${densityToPrint}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Density</td>
+                <td style="text-align: right; padding-bottom: 20px;">${densityToPrint}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Purity</td>
-                <td style="text-align: right;">${purityToPrint} %</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Purity</td>
+                <td style="text-align: right; padding-bottom: 20px;">${purityToPrint} %</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Karat</td>
-                <td style="text-align: right;">${karatToPrint}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px; font-weight: bold;">Karat</td>
+                <td style="text-align: right; padding-bottom: 20px; font-weight: bold;">${karatToPrint}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Price</td>
-                <td style="text-align: right;">GH₵ ${Number(pricetToPrint).toFixed(2)}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Price</td>
+                <td style="text-align: right; padding-bottom: 20px;">GH₵ ${separatedPriceToPrint}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td>Price per pound</td>
-                <td style="text-align: right;">GH₵ ${pricePerPoundToPrint}</td>
+            <tr style="border-bottom: 2px dashed #000000; margin-bottom: 4px;">
+                <td style="padding-bottom: 20px; padding-top: 10px;">Price per pound</td>
+                <td style="text-align: right; padding-bottom: 20px;">GH₵ ${separatedPricePerPoundToPrint}</td>
             </tr>
-            <tr style="border-bottom: 4px dotted #808080;">
-                <td><h4>Total Price</h4></td>
-                <td style="text-align: right;"><h4>GH₵ ${totalPricetToPrint}</h4></td>
+            <tr style="border-bottom: 2px dashed #000000;">
+                <td style=""><h4>Total Price</h4></td>
+                <td style="text-align: right;"><h4>GH₵ ${separatedTotalPriceToPrint}</h4></td>
             </tr>
             
         </table>
