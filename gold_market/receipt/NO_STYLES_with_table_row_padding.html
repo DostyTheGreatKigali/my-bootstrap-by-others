@@ -15,16 +15,16 @@
     <div 
     style="font-family: 'Open Sans', sans-serif;
     padding-bottom: 8px;
-    /* font-size: 14px; */
+    font-size: 16px;
     "
     >
 
        <div>
         <h3 style="text-align: center;">${companyName.toUpperCase()}</h3>
-        <div style="text-align: center; margin-bottom: 24px;">
+        <div style="text-align: center; margin-bottom: 16px;">
             <p style="margin-bottom: 2px; margin-top: 0;">${postOfficeAddress}</p>
-            <p style="margin-bottom: 2px; margin-top: 0;">Tel: ${companyContact}</p>
             <p style="margin-bottom: 2px; margin-top: 0;">Digital Address: ${digitalAddress}</p>
+            <p style="margin-bottom: 2px; margin-top: 0;">Tel: ${companyContact}</p>
             <p style="margin-bottom: 2px; margin-top: 0;">Email: ${companyEmail}</p>
         </div>
         <div style="">
@@ -35,8 +35,8 @@
         </div>  
        </div>
 
-       <div style="display: flex; flex-direction: column; justify-content: center">
-        <table style="border-collapse: collapse;">
+       <div>
+        <table style="border-collapse: collapse; width: 480px;">
             <tr style="border-bottom: 2px dashed #000000; padding-right: 8px;">
                 <td style="padding-bottom: 20px; padding-top: 10px;">Grams</td>
                 <td style="text-align: right; padding-bottom: 20px;">${Number(gramsToPrint).toFixed(2)}</td>
@@ -79,8 +79,8 @@
 
        <div style="text-align: center;">
         <p style="font-weight: bold;">${thanksMessage}</p>
-        <p style="/*font-size: 12px;*/">${companyPublicWebsite}</p>
-        <p style="font-weight: bold; /*font-size: 12px;*/">${softwareBuilders}</p>
+        <p style="font-size: 12px;">${companyPublicWebsite}</p>
+        <p style="font-weight: bold; font-size: 12px;">${softwareBuilders}</p>
        </div>
 
     </div>
